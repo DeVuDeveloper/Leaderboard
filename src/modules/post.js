@@ -1,6 +1,6 @@
 const generatedApiKey = '7T2HCxTBeq6YyC2qi0OX';
 
-const post = (name, score) => {
+const setData = (name, score) => {
   const scoreData = {
     user: name,
     score,
@@ -20,4 +20,4 @@ const post = (name, score) => {
       console.warn('Failed:', error);
     });
 };
-export default post;
+export default setData;

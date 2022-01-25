@@ -33,15 +33,15 @@ header h1 {
 
 }
 
-#list {
+.scores-wrapper {
   padding: 15px;
 }
 
-#list li {
+.scores li {
   padding: 5px;
 }
 
-#list li:nth-child(odd) {
+.scores li:nth-child(odd) {
   background-color: #ddd;
 }
 
@@ -87,7 +87,7 @@ footer {
     gap: 100px;
  }
 
- .scores {
+ .scores-wrapper {
    flex: 2;
  }
 
