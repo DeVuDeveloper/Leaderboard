@@ -1,7 +1,7 @@
 const renderList = (scoreData) => {
   const scores = document.querySelector('.scores');
   scores.innerHTML = '';
-  scoreData.sort((x, y) => x.data - y.data);
+  scoreData = scoreData.sort((x, y) => y.score - x.score);
   scoreData.forEach((data) => {
     const score = document.createElement('li');
     scores.appendChild(score);
