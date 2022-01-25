@@ -1,6 +1,6 @@
 # Leaderboard
 
-Live preview [here]( https://vudej.github.io/Leaderboard/). 
+Live preview [here]( https://vudej.github.io/Leaderboard/dist/). 
 
 ## Screenshots
 ![Example screenshot](img/screenshot.PNG)
