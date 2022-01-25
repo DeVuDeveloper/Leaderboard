@@ -19,7 +19,6 @@ main {
 header h1 {
   font-size: 35px;
   margin: 50px 0;
-  
 }
 
 .heading {
@@ -30,10 +29,9 @@ header h1 {
 
 .score-list {
   border: 1px solid #000;
-
 }
 
-.scores-wrapper {
+.scores {
   padding: 15px;
 }
 
@@ -62,7 +60,7 @@ form {
 }
 
 form input {
- padding: 3px ;
+  padding: 3px;
 }
 
 .btn {
@@ -79,24 +77,23 @@ footer {
 @media only screen and (min-width: 678px) {
   main {
     padding: 100px 300px;
- } 
+  }
 
- .wrapper {
+  .wrapper {
     display: flex;
     justify-content: center;
     gap: 100px;
- }
+  }
 
- .scores-wrapper {
-   flex: 2;
- }
+  .scores-wrapper {
+    flex: 2;
+  }
 
- .add {
-   flex: 1;
- }
+  .add {
+    flex: 1;
+  }
 
- footer {
-   text-align: center;
- } 
+  footer {
+    text-align: center;
+  }
 }
-

@@ -1,11 +1,12 @@
 const renderList = (scoreData) => {
   const scores = document.querySelector('.scores');
   scores.innerHTML = '';
+  scoreData.sort((x, y) => x.data - y.data);
   scoreData.forEach((data) => {
     const score = document.createElement('li');
     scores.appendChild(score);
     const name = document.createElement('span');
-    name.textContent = `${data.user}`;
+    name.textContent = `${data.user}: `;
     score.appendChild(name);
     const number = document.createElement('span');
     number.textContent = `${data.score}`;
