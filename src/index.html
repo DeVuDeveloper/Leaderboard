@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard-</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard-</title>
 </head>
 
 <body>
-  
-        
-     
-      <main>
-        <header>
-        <h1>Leaderboard</h1>
-      </header>
-      <div class="wrapper">
-        
-        <section class="scores">
-          <div class="list-header">
-            <h3>Recent scores</h3>
-            <button type="button">Refresh</button>
-          </div><br>
-          <div class="list">
-            <table>
-               <tr>
-                  <td>Name: 100</td>
-                </tr>
-                <tr>
-                  <td>Name: 20</td>
-                </tr>
-                <tr>
-                  <td>Name: 50</td>
-                </tr>
-                <tr>
-                  <td>Name: 78</td>
-                </tr>
-                <tr>
-                  <td>Name: 125</td>
-                </tr>
-                <tr>
-                  <td>Name: 77</td>
-                </tr>
-                <tr>
-                    <td>Name: 42</td>
-                </tr>
-              </table>
-              
-          </div>
-        </section>
-        <section class="addScore">
-          <h3>Add your score</h3>
-          <form class='form'>
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your score">
-            <button class='btn' type='submit'>Submit</button>
-          </form>
-        </section>
-      </div>
-      </main>
-
+  <main>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <div class="wrapper">
+      <section class="scores">
+        <div class="heading">
+          <h3>Recent scores</h3>
+          <button type="button" id="refresh">Refresh</button>
+        </div>
+        <div class="score-list">
+          <ul id="list">
+            <li><span>Name:</span> <span>15</span></li>
+            <li><span>Name:</span> <span>15</span></li>
+            <li><span>Name:</span> <span>15</span></li>
+            <li><span>Name:</span> <span>15</span></li>
+            <li><span>Name:</span> <span>15</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="add">
+        <h3>Add your score</h3>
+        <form class='form'>
+          <input type="text" placeholder="Your name">
+          <input type="text" placeholder="Your score">
+          <button class='btn' type='submit'>Submit</button>
+        </form>
+      </section>
+      <footer>
+        <p>Copyright: &copy; 2022 made by Dejan</p>
+      </footer>
+    </div>
+    
+  </main>
 </body>
+
 </html>
