@@ -13,6 +13,9 @@ const post = (name, score) => {
     body: JSON.stringify(scoreData),
   })
     .then((response) => response.json())
+    .then((data) => {
+      console.log('Success:', data);
+    })
     .catch((error) => {
       console.warn('Failed:', error);
     });
