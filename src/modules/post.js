@@ -1,4 +1,4 @@
-const generatedApiKey = 'K9s2GNyPHxBjHHzMTmXr';
+const generatedApiKey = 'Ar1eGuEz5KKKPW2ueoxi';
 
 const setData = (name, score) => {
   const data = {

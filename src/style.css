@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(88, 169, 196);
+  background-image: url('/img/bck.jpg');
 }
 
 main {
@@ -17,8 +20,10 @@ main {
 }
 
 header h1 {
-  font-size: 35px;
-  margin: 50px 0;
+  font-size: 52px;
+  margin: 20px 0;
+  color: #c5c6c7;
+  font-family: 'Neonderthaw', sans-serif;
 }
 
 .heading {
@@ -27,20 +32,32 @@ header h1 {
   margin-bottom: 15px;
 }
 
-.score-list {
-  border: 1px solid #000;
+h3 {
+  color: #c5c6c7;
 }
 
-.scores {
-  padding: 15px;
+.score-list {
+  border: 1px solid #9a1750;
+  border-radius: 12px;
+  margin: 12px;
 }
 
 .scores li {
+  display: flex;
+  justify-content: space-between;
   padding: 5px;
 }
 
 .scores li:nth-child(odd) {
-  background-color: #ddd;
+  background-color: #376e6f;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.scores li:nth-child(even) {
+  background-color: #da7b93;
+  color: #9a1750;
+  font-weight: bolder;
 }
 
 .add {
@@ -52,6 +69,24 @@ header h1 {
   margin-top: 20px;
 }
 
+.refresh-btn {
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -60,11 +95,29 @@ form {
 }
 
 form input {
-  padding: 3px;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+  background-color: #c5c6c7;
 }
 
 .btn {
   align-self: end;
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -72,6 +125,10 @@ footer {
   width: 100%;
   bottom: 0;
   padding: 10px 10px;
+}
+
+footer p {
+  color: #c5c6c7;
 }
 
 @media only screen and (min-width: 678px) {
@@ -87,6 +144,12 @@ footer {
 
   .scores-wrapper {
     flex: 2;
+  }
+
+  .scores li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
   }
 
   .add {

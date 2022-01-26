@@ -10,6 +10,7 @@ Live preview [here]( https://vudej.github.io/Leaderboard/dist/).
 
 ## General info
 This project is my first project using API.
+Sending and receiving data from API.
 
 ## Technologies
 Project is created with:
@@ -39,7 +40,7 @@ $ npm start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/VuDej/Leaderboard/issues/3.
+Feel free to check the [issues page](https://github.com/VuDej/Leaderboard/issues/3).
 
 ## Show your support
 
