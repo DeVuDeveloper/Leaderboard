@@ -90,6 +90,7 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
+  position: fixed;
   gap: 15px;
   margin-top: 15px;
 }
