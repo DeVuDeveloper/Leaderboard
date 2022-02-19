@@ -3,6 +3,10 @@ import setData from './modules/post';
 import get from './modules/get';
 import renderList from './modules/render';
 
+window.onload = async () => {
+  renderList(await get());
+};
+
 const sendScore = document.querySelector('.btn');
 const refresh = document.querySelector('.refresh-btn');
 
@@ -15,9 +19,5 @@ sendScore.onclick = () => {
 };
 
 refresh.onclick = async () => {
-  renderList(await get());
-};
-
-windows.onload = async () => {
   renderList(await get());
 };
