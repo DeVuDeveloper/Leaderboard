@@ -17,3 +17,7 @@ sendScore.onclick = () => {
 refresh.onclick = async () => {
   renderList(await get());
 };
+
+windows.onload = async () => {
+  renderList(await get());
+};
